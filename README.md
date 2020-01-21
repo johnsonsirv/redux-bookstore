@@ -4,7 +4,7 @@ In this project, I build the front-end of an application that will help a fictic
 
 This project was completed in line with standards provided by [Microverse](https://www.microverse.org/ 'The Global School for Remote Software Developers!').
 
--- See [Live URL](https://redux-bookstore.herokuapp.com/)
+-- See [Live URL](https://redux-bookstore-mvp.herokuapp.com/)
 
 ## Technologies
 
