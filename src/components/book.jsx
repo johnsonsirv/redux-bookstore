@@ -2,7 +2,8 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Button from './button';
 
-const Book = ({ id, title, category }) => {
+const Book = ({ book }) => {
+  const { id, title, category } = book;
   return (
     <tr>
       <td>{id}</td>
@@ -16,9 +17,11 @@ const Book = ({ id, title, category }) => {
 };
 
 Book.propTypes = {
-  id: PropTypes.number.isRequired,
-  title: PropTypes.string.isRequired,
-  category: PropTypes.string.isRequired,
+  book: PropTypes.shape({
+    id: PropTypes.number,
+    title: PropTypes.string,
+    category: PropTypes.string,
+  }).isRequired,
 };
 
 export default Book;
