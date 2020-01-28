@@ -10,7 +10,7 @@ const books = (state = [], action) => {
         ...state,
       ];
     case REMOVE_BOOK:
-      return state; // to be modified in milestone 4
+      return state.filter(book => book.id !== action.book.id);
     default:
       return state;
   }
