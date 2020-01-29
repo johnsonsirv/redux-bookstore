@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { createBook } from '../actions';
+import BookCategories from '../utils/categoryList';
 
 const mapDispatchToProps = dsipatch => ({
   onSubmit: book => {
@@ -15,16 +16,6 @@ class BookForm extends Component {
     this.state = {
       book: { title: '', category: '' },
     };
-    this.categories = [
-      { id: 0, name: ' ' },
-      { id: 1, name: 'Action' },
-      { id: 2, name: 'Biography' },
-      { id: 3, name: 'History' },
-      { id: 4, name: 'Horror' },
-      { id: 5, name: 'Kids' },
-      { id: 6, name: 'Learning' },
-      { id: 7, name: 'Sci-Fi' },
-    ];
   }
 
   handleChange = ({ currentTarget: input }) => {
@@ -57,7 +48,7 @@ class BookForm extends Component {
           placeholder="book title"
         />
         <select onChange={this.handleChange} name="category" value={category}>
-          {this.categories.map(c => (
+          {BookCategories.map(c => (
             <option key={c.id} value={c.name}>
               {c.name}
             </option>
