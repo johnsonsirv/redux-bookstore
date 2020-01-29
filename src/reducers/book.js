@@ -4,13 +4,13 @@ const books = (state = [], action) => {
   switch (action.type) {
     case CREATE_BOOK:
       return [
-        ...state,
         {
           ...action.book,
         },
+        ...state,
       ];
     case REMOVE_BOOK:
-      return state; // to be modified in milestone 4
+      return state.filter(book => book.id !== action.book.id);
     default:
       return state;
   }
