@@ -4,10 +4,12 @@ import { Provider } from 'react-redux';
 import { createStore } from 'redux';
 import rootReducer from './reducers';
 import RandomId from './utils/randomId';
+import { visibilityFilters } from './actions';
 import App from './components/App';
 import './index.css';
 
 const initialState = {
+  filter: visibilityFilters.Action,
   books: [
     {
       id: RandomId(),

@@ -1,9 +1,14 @@
 import RandomId from '../utils/randomId';
+import { getVisibilityFilters } from '../utils/categoryList';
 
 export const CREATE_BOOK = 'CREATE_BOOK';
 export const REMOVE_BOOK = 'REMOVE_BOOK';
 export const CHANGE_FILTER = 'CHANGE_FILTER';
 
+const categories = getVisibilityFilters();
+export const visibilityFilters = {
+  ...categories,
+};
 
 // action creators
 export const createBook = book => ({

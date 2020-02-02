@@ -20,4 +20,13 @@ export const FilterCategories = [
   { id: 7, name: 'Sci-Fi' },
 ];
 
+export const getVisibilityFilters = () => {
+  const categories = {};
+  FilterCategories.map(({ name }) => {
+    categories[name] = name;
+    return categories;
+  });
+  return categories;
+};
+
 export default BookCategories;
