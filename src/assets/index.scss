@@ -1,0 +1,10 @@
+$background-theme: '#f5f6fa;';
+
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: $background-theme;
+}
+
+@import './App.scss';
+@import './main.scss';

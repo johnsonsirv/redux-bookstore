@@ -39,25 +39,39 @@ class BookForm extends Component {
     } = this.state;
 
     return (
-      <form>
-        <input
-          name="title"
-          value={title}
-          type="text"
-          onChange={this.handleChange}
-          placeholder="book title"
-        />
-        <select onChange={this.handleChange} name="category" value={category}>
-          {BookCategories.map(c => (
-            <option key={c.id} value={c.name}>
-              {c.name}
-            </option>
-          ))}
-        </select>
-        <button type="button" onClick={this.handleSubmit}>
-          Save
-        </button>
-      </form>
+      <div className="flex-row mt-1 bd-1 bd-secondary">
+        <div className="w-5 pd-1">
+          <h3 className="text-bold text-secondary">ADD NEW BOOK</h3>
+          <form>
+            <input
+              name="title"
+              value={title}
+              type="text"
+              onChange={this.handleChange}
+              placeholder="book title"
+            />
+            <select
+              onChange={this.handleChange}
+              name="category"
+              value={category}
+              placeholder="book title"
+            >
+              {BookCategories.map(c => (
+                <option key={c.id} value={c.name}>
+                  {c.name}
+                </option>
+              ))}
+            </select>
+            <button
+              className="btn btn-primary btn-lg"
+              type="button"
+              onClick={this.handleSubmit}
+            >
+              Save
+            </button>
+          </form>
+        </div>
+      </div>
     );
   }
 }

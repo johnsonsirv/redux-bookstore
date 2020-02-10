@@ -6,10 +6,10 @@ import rootReducer from './reducers';
 import RandomId from './utils/randomId';
 import { visibilityFilters } from './actions';
 import App from './components/App';
-import './index.css';
+import './assets/index.scss';
 
 const initialState = {
-  filter: visibilityFilters.Action,
+  filter: visibilityFilters.All,
   books: [
     {
       id: RandomId(),
@@ -35,5 +35,5 @@ ReactDOM.render(
   <Provider store={store}>
     <App />
   </Provider>,
-  document.getElementById('root'),
+  document.getElementById('root')
 );

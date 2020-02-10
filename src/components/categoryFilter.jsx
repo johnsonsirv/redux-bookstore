@@ -8,13 +8,16 @@ const CategoryFilter = ({ handleFilterChange }) => {
   };
 
   return (
-    <select name="" id="" onChange={handleChange}>
-      {FilterCategories.map(c => (
-        <option key={c.id} value={c.name}>
-          {c.name}
-        </option>
-      ))}
-    </select>
+    <div className="flex-container flex-right mt-1">
+      <h3 className="text-secondary mr-1">CATEGORIES</h3>
+      <select name="" id="" onChange={handleChange} className="filter">
+        {FilterCategories.map(c => (
+          <option key={c.id} value={c.name}>
+            {c.name}
+          </option>
+        ))}
+      </select>
+    </div>
   );
 };
 
