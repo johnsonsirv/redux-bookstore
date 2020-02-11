@@ -4,24 +4,25 @@ import Button from './button';
 
 const Book = props => {
   const {
-    book: { id, title, category },
+    book: { title, category },
     handleRemoveBook,
   } = props;
   return (
-    <tr>
-      <td>{id}</td>
-      <td>{title}</td>
-      <td>{category}</td>
-      <td>
-        <Button text="Remove Book" onClick={handleRemoveBook} />
-      </td>
-    </tr>
+    <div className="flex-row mt-1 bd-1 bd-secondary">
+      {/* <div>{id}</div> */}
+      <div className="book-details pd-1">
+        <h4 className="text-bold text-secondary">{category}</h4>
+        <h2 className="text-bold text-title">{title}</h2>
+      </div>
+      <div className="book-actions">
+        <Button text="Remove" onClick={handleRemoveBook} />
+      </div>
+    </div>
   );
 };
 
 Book.propTypes = {
   book: PropTypes.shape({
-    id: PropTypes.string,
     title: PropTypes.string,
     category: PropTypes.string,
   }).isRequired,

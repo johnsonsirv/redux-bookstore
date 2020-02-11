@@ -1,13 +1,15 @@
 import React from 'react';
+import NavBar from './navBar';
 import BookForm from '../containers/bookForm';
 import BookList from '../containers/bookList';
-import './App.css';
+import '../assets/App.scss';
 
 function App() {
   return (
     <div className="App">
-      <BookForm />
+      <NavBar />
       <BookList />
+      <BookForm />
     </div>
   );
 }

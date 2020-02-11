@@ -30,25 +30,13 @@ const mapDispatchToProps = dispatch => ({
 const BookList = ({ books, handleRemoveBook, handleFilterChange }) => (
   <>
     <CategoryFilter handleFilterChange={filter => handleFilterChange(filter)} />
-    <table>
-      <thead>
-        <tr>
-          <th>Book ID</th>
-          <th>Title</th>
-          <th>Category</th>
-          <th> </th>
-        </tr>
-      </thead>
-      <tbody>
-        {books.map(book => (
-          <Book
-            key={book.id}
-            book={book}
-            handleRemoveBook={() => handleRemoveBook(book)}
-          />
-        ))}
-      </tbody>
-    </table>
+    {books.map(book => (
+      <Book
+        key={book.id}
+        book={book}
+        handleRemoveBook={() => handleRemoveBook(book)}
+      />
+    ))}
   </>
 );
 

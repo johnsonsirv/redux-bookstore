@@ -1,0 +1,20 @@
+$bgColor: #ffffff;
+
+nav {
+  height: 8vh;
+  width: auto;
+  background-color: $bgColor;
+}
+
+.brand {
+  width: auto;
+  height: 37px;
+  font-family: Montserrat;
+  font-size: 30px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #0290ff;
+}
