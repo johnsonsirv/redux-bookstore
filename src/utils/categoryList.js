@@ -8,7 +8,7 @@ const BookCategories = [
   { id: 6, name: 'Learning' },
   { id: 7, name: 'Sci-Fi' },
 ];
-
+// used for drop down
 export const FilterCategories = [
   { id: 0, name: 'All' },
   { id: 1, name: 'Action' },
