@@ -1,31 +1,60 @@
-## Redux Bookstore (Front-end)
+<h1 align="center">Redux Bookstore (Front-end)</h1>
+<p>
+  <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
+  <a href="https://github.com/johnsonsirv/redux-bookstore#readme" target="_blank">
+    <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
+  </a>
+  <a href="https://github.com/johnsonsirv/redux-bookstore/graphs/commit-activity" target="_blank">
+    <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
+  </a>
+  <a href="https://github.com/johnsonsirv/redux-bookstore/blob/master/LICENSE" target="_blank">
+    <img alt="License: MIT" src="https://img.shields.io/github/license/johnsonsirv/redux-bookstore" />
+  </a>
+  <a href="https://twitter.com/vokeugo" target="_blank">
+    <img alt="Twitter: vokeugo" src="https://img.shields.io/twitter/follow/vokeugo.svg?style=social" />
+  </a>
+  <a href="https://twitter.com/vokeugo" target="_blank">
+    <img alt="netlify" src="https://api.netlify.com/api/v1/badges/c9424649-60c1-4860-aeb2-a1dfede32144/deploy-status" />
+  </a>
 
-In this project, I build the front-end of an application that will help a ficticious company organize and manage their bookstore. They want it to be fast, dynamic and responsive to their actions and therefore I decided to build it with `React & Redux`. The project has been split into multiple milestones, and each milestone has functional and technical requirements.
+</p>
+
+<p>
+In this project, I built the front-end of an application that will help a ficticious company organize and manage their bookstore. They want it to be fast, dynamic and responsive to their actions and therefore I decided to build it with `React & Redux`. The project has been split into multiple milestones, and each milestone has functional and technical requirements.
 
 This project was completed in line with standards provided by [Microverse](https://www.microverse.org/ 'The Global School for Remote Software Developers!').
 
--- See [Live URL](https://redux-bookstore-mvp.herokuapp.com/)
+</p>
 
-## Technologies
+### See [Live URL](https://redux-bookstore-mvp.herokuapp.com/)
+
+  <a href="https://redux-bookstore-mvp.herokuapp.com" target="_blank">
+    <img alt="redux-bookstore" src="https://github.com/johnsonsirv/redux-bookstore/blob/master/docs/redux_bookstore_frontend.png" />
+  </a>
+
+## Built with:
 
 - React
 - JavaScript (ES6)
-- Node.js
 - npm
-- React-Create-App
-- React-Create-app-buildback for deployment to `Heroku Cloud`. See [Docs](https://github.com/mars/create-react-app-buildpack)
+- Create-React-App
+- Create-React-app-buildback for deployment to `Heroku Cloud`. See [Docs](https://github.com/mars/create-react-app-buildpack)
 - Redux
 - CSS
 
-## Installation / Usage
+## Installation:
 
 > Clone the repository to your local machine
 
 ```sh
 $ git clone https://github.com/johnsonsirv/redux-bookstore.git
 ```
+## Usage
 
 > Open the terminal
+```sh
+$ cd redux-bookstore
+```
 
 ## Available Scripts
 
@@ -64,37 +93,15 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Contributor(s)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Victor Okeugo](https://angel.co/u/victorokeugo/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Github: [@johnsonsirv](https://github.com/johnsonsirv)
+- Twitter: [@vokeugo](https://twitter.com/@vokeugo/)
+- Email: [okeugo.victor.c@gmail.com]()
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
-
-## How to contribute
+## How to contribute:
 
 1. Fork it (https://github.com/johnsonsirv/redux-bookstore/fork)
 2. Create your feature branch (git checkout -b feature/[choose-a-name])
